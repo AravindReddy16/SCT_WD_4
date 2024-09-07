@@ -1,0 +1,146 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox {
+    width: 35rem;
+    height: 40rem;
+    background-color: rgb(226, 101, 43);
+}
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.inputbox,.inputbox>form {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.inputbox>form>input[type='text'] {
+    width: 18rem;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.inputbox>form>input[type='date'] {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 13px;
+    padding: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+}
+.inputbox>form>button {
+    width: 5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.itemsbox {
+    width: 100%;
+    height: 75%;
+    padding: 1rem;
+    overflow: auto;
+}
+.itemsbox::-webkit-scrollbar {
+    display: none;
+}
+.item {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.check {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check>input[type='checkbox']{
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+.matter {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.05rem;
+}
+.matter>p {
+    font-size: 18px;
+    font-weight: 550;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.matter>span {
+    font-size: 13px;
+}
+.buttons {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.buttons>button {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+}
+.footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+@media(width<=590px){
+    .mainbox {
+        width: 100%;
+        height: 100%;
+    }
+    .inputbox,.inputbox>form {
+        height: 15%;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .itemsbox {
+        height: 70%;
+    }
+    .buttons {
+        justify-content: space-evenly;
+        gap: 0rem;
+    }
+    .buttons>button {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
